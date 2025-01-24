@@ -5,7 +5,7 @@
 
 This project demonstrates a robust approach to training autonomous driving agents using Imitation Learning (IL) in Gymnasium’s CarRacing-v3 simulation. The methodology employs two distinct sources of expert data—manual human operations and Proximal Policy Optimization (PPO)—to train separate Behavior Cloning (BC) models. These models are later integrated and iteratively refined using Dataset Aggregation (DAgger), a technique designed to improve the adaptability and robustness of the agents.
 
----
+
 
 ## Simulation Environment
 
@@ -21,7 +21,7 @@ The simulation plays a central role across multiple stages of the training pipel
 - **Behavior Cloning (BC) Validation**: After training, the BC models are tested within the simulation to evaluate their driving performance and robustness under different track configurations.
 - **DAgger Data Expansion**: During the DAgger phase, the simulation is used to run BC models, identify action discrepancies, and collect additional training data through real-time corrections from manual or PPO experts.
 
----
+
 
 ## Implementation Details
 
@@ -45,6 +45,4 @@ The simulation plays a central role across multiple stages of the training pipel
 - The dual BC model approach effectively integrates human intuition with algorithmic precision, producing robust driving agents capable of adapting to diverse environments.
 - Future advancements could involve more complex neural network architectures, expanded datasets with greater diversity, and extended training periods, further improving the performance and generalizability of the agent.
 
----
 
-This README outlines the methodology, highlights the role of the CarRacing-v3 simulation environment, and provides detailed insights into the training and validation processes for autonomous driving agents.
