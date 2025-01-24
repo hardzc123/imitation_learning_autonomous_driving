@@ -1,8 +1,7 @@
 # Imitation Learning for Autonomous Driving in the CarRacing Simulation
 
 ![Manual Control Example](images/bc.gif)
-![PPO Training Example](images/ppo.gif)
-![Final DAgger Model Example](images/dagger.gif)
+
 
 This project demonstrates a robust approach to training autonomous driving agents using Imitation Learning (IL) in Gymnasium’s CarRacing-v3 simulation. The methodology employs two distinct sources of expert data—manual human operations and Proximal Policy Optimization (PPO)—to train separate Behavior Cloning (BC) models. These models are later integrated and iteratively refined using Dataset Aggregation (DAgger), a technique designed to improve the adaptability and robustness of the agents.
 
